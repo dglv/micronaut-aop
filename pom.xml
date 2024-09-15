@@ -19,7 +19,7 @@
     <micronaut.version>4.6.0</micronaut.version>
     <micronaut.aot.enabled>false</micronaut.aot.enabled>
     <micronaut.aot.packageName>org.dglv.aot.generated</micronaut.aot.packageName>
-    <micronaut.runtime>netty</micronaut.runtime>
+    <micronaut.runtime>none</micronaut.runtime>
     <exec.mainClass>org.dglv.Application</exec.mainClass>
   </properties>
 
@@ -45,6 +45,12 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.34</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
@@ -103,6 +109,11 @@
                   <artifactId>micronaut-inject</artifactId>
                 </exclusion>
               </exclusions>
+            </path>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>1.18.34</version>
             </path>
           </annotationProcessorPaths>
           <compilerArgs>
