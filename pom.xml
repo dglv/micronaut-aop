@@ -21,6 +21,7 @@
         <micronaut.aot.packageName>org.dglv.aot.generated</micronaut.aot.packageName>
         <micronaut.runtime>none</micronaut.runtime>
         <exec.mainClass>org.dglv.Application</exec.mainClass>
+        <lombok.version>1.18.34</lombok.version>
     </properties>
 
   <repositories>
@@ -31,6 +32,12 @@
   </repositories>
 
   <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
+    </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
       <artifactId>micronaut-http-server-netty</artifactId>
@@ -103,6 +110,11 @@
                   <artifactId>micronaut-inject</artifactId>
                 </exclusion>
               </exclusions>
+            </path>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>${lombok.version}</version>
             </path>
           </annotationProcessorPaths>
           <compilerArgs>
