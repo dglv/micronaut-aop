@@ -21,7 +21,7 @@
         <micronaut.aot.packageName>org.dglv.aot.generated</micronaut.aot.packageName>
         <micronaut.runtime>none</micronaut.runtime>
         <exec.mainClass>org.dglv.Application</exec.mainClass>
-        <lombok.version>1.18.34</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
   <repositories>

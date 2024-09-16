@@ -10,11 +10,11 @@ import java.util.concurrent.TimeUnit;
 
 @Singleton
 @InterceptorBean(TimeMeasured.class)
-public class TimeMeasuredInterceptor implements MethodInterceptor<Void, String> {
+public class TimeMeasuredInterceptor implements MethodInterceptor<Object, Object> {
 
     @Nullable
     @Override
-    public String intercept(MethodInvocationContext<Void, String> context) {
+    public Object intercept(MethodInvocationContext<Object, Object> context) {
         long startTime = System.nanoTime();
         var result = context.proceed();
         long endTime = System.nanoTime();

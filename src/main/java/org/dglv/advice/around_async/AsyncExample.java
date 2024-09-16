@@ -1,4 +1,4 @@
-package org.dglv;
+package org.dglv.advice.around_async;
 
 import io.micronaut.scheduling.annotation.Async;
 import jakarta.inject.Singleton;

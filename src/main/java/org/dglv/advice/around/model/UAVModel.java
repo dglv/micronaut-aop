@@ -1,4 +1,4 @@
-package org.dglv.model;
+package org.dglv.advice.around.model;
 
 
 import lombok.AllArgsConstructor;
